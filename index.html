@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="piano-container">
+        <h1>🎹 Browser Piano</h1>
+        <p>キーボードを贅沢に使って2.5オクターブ演奏できます</p>
+        <div class="piano">
+            <!-- A(低ソ) から ](高レ) までの配置 -->
+            <!-- 白鍵: A S D F G H J K L ; : ] -->
+            <!-- 黒鍵: W E (空き) T Y (空き) I O P @ -->
+
+            <div data-note="196.00" data-key="a" class="key white"><span class="hint">A</span></div>
+            <div data-note="207.65" data-key="w" class="key black"><span class="hint">W</span></div>
+            <div data-note="220.00" data-key="s" class="key white"><span class="hint">S</span></div>
+            <div data-note="233.08" data-key="e" class="key black"><span class="hint">E</span></div>
+            <div data-note="246.94" data-key="d" class="key white"><span class="hint">D</span></div>
+
+            <div data-note="261.63" data-key="f" class="key white"><span class="hint">F</span></div>
+            <div data-note="277.18" data-key="t" class="key black"><span class="hint">T</span></div>
+            <div data-note="293.66" data-key="g" class="key white"><span class="hint">G</span></div>
+            <div data-note="311.13" data-key="y" class="key black"><span class="hint">Y</span></div>
+            <div data-note="329.63" data-key="h" class="key white"><span class="hint">H</span></div>
+
+            <div data-note="349.23" data-key="j" class="key white"><span class="hint">J</span></div>
+            <div data-note="369.99" data-key="i" class="key black"><span class="hint">I</span></div>
+            <div data-note="392.00" data-key="k" class="key white"><span class="hint">K</span></div>
+            <div data-note="415.30" data-key="o" class="key black"><span class="hint">O</span></div>
+            <div data-note="440.00" data-key="l" class="key white"><span class="hint">L</span></div>
+            <div data-note="466.16" data-key="p" class="key black"><span class="hint">P</span></div>
+            <div data-note="493.88" data-key=";" class="key white"><span class="hint">;</span></div>
+
+            <div data-note="523.25" data-key=":" class="key white"><span class="hint">:</span></div>
+            <div data-note="554.37" data-key="@" class="key black"><span class="hint">@</span></div>
+            <div data-note="587.33" data-key="]" class="key white"><span class="hint">]</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
