@@ -12,6 +12,12 @@
     <div class="piano-container">
         <h1>🎹 Browser Piano</h1>
         <p>キーボードを贅沢に使って2.5オクターブ演奏できます</p>
+
+        <div class="controls">
+            <label><input type="radio" name="instrument" value="piano" checked> 🎹 ピアノ</label>
+            <label><input type="radio" name="instrument" value="guitar"> 🎸 ギター</label>
+        </div>
+
         <div class="piano">
             <!-- A(低ソ) から ](高レ) までの配置 -->
             <!-- 白鍵: A S D F G H J K L ; : ] -->
@@ -40,6 +46,15 @@
             <div data-note="523.25" data-key=":" class="key white"><span class="hint">:</span></div>
             <div data-note="554.37" data-key="@" class="key black"><span class="hint">@</span></div>
             <div data-note="587.33" data-key="]" class="key white"><span class="hint">]</span></div>
+        </div>
+
+        <div class="drums">
+            <div data-drum="kick" data-key="1" class="drum-pad kick"><span class="hint">1</span><br><span
+                    class="label">KICK</span></div>
+            <div data-drum="snare" data-key="2" class="drum-pad snare"><span class="hint">2</span><br><span
+                    class="label">SNARE</span></div>
+            <div data-drum="hihat" data-key="3" class="drum-pad hihat"><span class="hint">3</span><br><span
+                    class="label">HIHAT</span></div>
         </div>
     </div>
     <script src="script.js"></script>
